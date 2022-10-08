@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisist</title>
+</head>
+<body>
+    <div>
+        <form id="formulario">
+            <p>
+                <label for="asignatura">Asignatura:</label>
+                <input type="text" name="asignatura" id="asignatura" placeholder="Ingrese su asignatura..."/> <br>
+            </p>
+            <p>
+                <label for="primerPrevio">Primer previo:</label>
+                <input type="number" name="primerPrevio" id="primerPrevio" placeholder="Nota..." step="0.01" min="0" max="5"/> <br>
+            </p>
+            <p>
+                <label for="segundoPrevio">Segundo previo:</label>
+                <input type="number" name="segundoPrevio" id="segundoPrevio" placeholder="Nota..." step="0.01" min="0" max="5"/> <br>
+            </p>
+            <p>
+                <label for="tercerPrevio">Tercer previo:</label>
+                <input type="number" name="tercerPrevio" id="tercerPrevio" placeholder="Nota..." step="0.01" min="0" max="5"/> <br>
+            </p>
+            <p>
+                <label for="previoFinal">Previo Final:</label>
+                <input type="number" name="previoFinal" id="previoFinal" placeholder="Nota..." step="0.01" min="0" max="5"/> <br>
+            </p>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <table border="1px">
+            <tr>
+                <th>Asignatura</th>
+                <th>Primer Previo</th>
+                <th>Segundo Previo</th>
+                <th>Tercer Previo</th>
+                <th>Previo Final</th>
+                <th>Definitiva</th>
+            </tr>
+            <tbody id="tabla">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="divisist.js"></script>
+</body>
+</html>
